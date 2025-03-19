@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 accelerate launch train.py --gradient_checkpointing --enable_slicing --enable_tiling --allow_tf32 --use_8bit_adam  --validation_steps 100 --model_checkpointing_steps 1000 --max_train_steps 2000 --optimizer_checkpointing_steps 2000
